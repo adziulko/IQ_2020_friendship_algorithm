@@ -15,8 +15,8 @@ def play_game():
 		answer_one = int(input('Are you a morning or night person?\n1. Morning\n2. Night\nYour Answer:'))    
 
 		## STEP 2&3 HERE
-		if answer_one == 1:
-			input("Same! It's too hot at night here right now.")
+		if answer_one == 1: total_points += 5
+		if answer_one == 2: total_points += 3 
 
 	
 		## STEP 4 HERE
