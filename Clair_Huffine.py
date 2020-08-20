@@ -27,17 +27,21 @@ def play_game():
                     elif answer_two_one == 2 : total_points += 0
                     else: total_points += 0
                 elif answer_two == 2 : total_points =+ 0 
-                else: total_points += 0
+                else total_points += 0
                 
                 ## Q3
                 answer_three == int(input("What is your favorite outdoor activity? \n1. Hiking \n2. Rockclimbing \n3. Running \n\nYour Selection:"))
                 if answer_three == 1 : total_points += 5
                 elif answer_three == 2 : total_points += 0
                 elif answer_three == 3 : total_points -= 5
-                else: total_points += 0
+                else total_points += 0
 
                 ## STEP 4 HERE
-	        if total_points 
+                print(total_points)
+                if total_points == 15 : print("Let's go hike to a plant shop!") 
+                elif total_points == 10 : print("We will get along just fine (:")
+                elif total_points == 5 : print("Nice to meet you!")
+                else: print("Well I am sure we can still make it work")
 		
 		user_entry = input('Select Option!\n1. Play Game\n2. Exit Game\n\nYour Selection: ')
 		user_entry = int(user_entry)
