@@ -10,9 +10,14 @@ def play_game():
 	while user_entry != 1 and user_entry != 2: user_entry = input('Select Option!\n1. Play Game\n2. Exit Game\n\nYour Selection: ')
 	# if the user selects 1, they want to play! Ask them questions and wait for their answers.
 	while user_entry == 1:
-		## STEP 1 HERE
-		
+		## STEP 1 HERE	
+                total_points = 0
+		answer_one = int(input('Are you a morning or night person?\n1. Morning\n2. Night\nYour Answer:'))    
+
 		## STEP 2&3 HERE
+		if answer_one == 1:
+			input("Same! It's too hot at night here right now."
+
 	
 		## STEP 4 HERE
 	
@@ -24,4 +29,4 @@ def play_game():
 
 	
 ## Function call to play friendship algorithm game
-play_game()
+play_game(
