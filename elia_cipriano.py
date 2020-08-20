@@ -35,9 +35,19 @@ def play_game():
 		elif step2 == 'country':
 			points += 25
 
+		step3 = str(input("\nDo you love the environment? (y/n): "))
+		if step3 == 'y':
+			points += 50
+		elif step3 == 'n':
+			points -= 1000
+
 		## STEP 4 HERE
-
-
+		step4 = str(input("\nDo you like butter chicken? (y/n): "))
+		if step4 == 'y':
+			points += 100
+		elif step4 == 'n':
+			points -= 100
+		print('You earned ')
 		user_entry = input('Select Option!\n1. Play Game\n2. Exit Game\n\nYour Selection: ')
 		user_entry = int(user_entry)
 
