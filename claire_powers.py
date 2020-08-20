@@ -2,7 +2,8 @@ import sys
 
 ## Function to play friendship algorithm game  
 def play_game():
-	### START GAME
+	
+	## START GAME
 
 	# initialize the user input to 0
 	user_entry = 0
@@ -20,7 +21,10 @@ def play_game():
 
 	
 		## STEP 4 HERE
-	
+		print(total_points)
+		if total_points<=10: print("Sorry. It'll be great working with you but no need to hang out otherwise.")
+			elif: total_points>10: print("Let's hang out!")
+			else: print("Seems like no points registered for you. That's not a good sign.")
 		
 		user_entry = input('Select Option!\n1. Play Game\n2. Exit Game\n\nYour Selection: ')
 		user_entry = int(user_entry)
