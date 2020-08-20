@@ -17,7 +17,7 @@ def play_game():
 
 		## STEP 2&3 HERE
 		if answer_one == 1: total_points += 5
-		if answer_one == 2: total_points += 3 
+		if answer_one == 2: total_points += 4 
 
 	
 		## STEP 4 HERE
