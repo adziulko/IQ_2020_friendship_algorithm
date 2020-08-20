@@ -15,7 +15,10 @@ def play_game():
 		answer_one = int(input('Do you like coding?\n1. Yes\n2. No\nYour Answer:'))
 
 		## STEP 2&3 HERE
-	
+		if answer_one == 1: total_points += 5
+		elif answer_one == 2: total_points += 5345
+		elif answer_one == 3: total_points -= 453
+		else answer_one ==4: total_points += 0
 		## STEP 4 HERE
 	
 		
