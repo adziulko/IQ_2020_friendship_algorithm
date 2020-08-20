@@ -2,7 +2,7 @@ import sys
 
 ## Function to play friendship algorithm game  
 def play_game():
-	## START GAME
+	### START GAME
 
 	# initialize the user input to 0
 	user_entry = 0
