@@ -9,11 +9,26 @@ def play_game():
 	# ask the user to make their own input (1 to play or 2 to exit):
 	while user_entry != 1 and user_entry != 2: user_entry = input('Select Option!\n1. Play Game\n2. Exit Game\n\nYour Selection: ')
 	# if the user selects 1, they want to play! Ask them questions and wait for their answers.
-	while user_entry == 1:
+	while user_entry == 1 :
 		## STEP 1 HERE
-		
+		total_points = 0 
+                answer_one = int(input('Do you want to be friends? \n1. Yes \n2. No\n\nYour Selection: '))
 		## STEP 2&3 HERE
-	
+                elif answer_one == 1 :
+                        input('Sweet! But first, a few important questions...')
+                if answer_one == 2 :
+                        input("Well...maybe later!")
+                        break
+                ## Q2
+                answer_two ==  int(input("Do you absolutely love plants??? \n1. Heck yeah! \n2. Okay maybe not /that/ much...\n\nYour Selection:"))
+                if answer_two == 1 : total_points =+ 5
+                    answer_two_one = int(input("Do you want more plants? \n1. Never too many \n2. I already have so many to take care of! \n\nYour Selection:"))
+                    if answer_two_one == 1 : total_points =+ 5
+                    elif answer_two_one == 2 : total_points =+ 0
+                    else: total_points += 0
+                elif answer_two == 2 : total_points =+ 0 
+                else: total_points += 0
+
 		## STEP 4 HERE
 	
 		
