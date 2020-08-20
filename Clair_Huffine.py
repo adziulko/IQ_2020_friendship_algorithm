@@ -15,10 +15,11 @@ def play_game():
                 answer_one = int(input('Do you want to be friends? \n1. Yes \n2. No\n\nYour Selection: '))
 		## STEP 2&3 HERE
                 if answer_one == 1 :
-                        input('Sweet! But first, a few important questions...')
+                        print('Sweet! But first, a few important questions...')
                 elif answer_one == 2 :
-                        input("Well...maybe later!")
+                        print("Well...maybe later!")
                         break
+                else total_points += 0
                 ## Q2
                 answer_two == int(input("Do you absolutely love plants??? \n1. Heck yeah! \n2. Okay maybe not /that/ much...\n\nYour Selection:"))
                 if answer_two == 1 : total_points += 5
