@@ -16,7 +16,7 @@ def play_game():
 
 		## STEP 2&3 HERE
 		if answer_one == 1:
-			input("Same! It's too hot at night here right now."
+			input("Same! It's too hot at night here right now.")
 
 	
 		## STEP 4 HERE
@@ -29,4 +29,4 @@ def play_game():
 
 	
 ## Function call to play friendship algorithm game
-play_game(
+play_game()
