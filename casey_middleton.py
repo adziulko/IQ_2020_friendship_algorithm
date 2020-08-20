@@ -11,9 +11,13 @@ def play_game():
 	# if the user selects 1, they want to play! Ask them questions and wait for their answers.
 	while user_entry == 1:
 		## STEP 1 HERE
-		
+                total_points = 0
+                answer_one = int(input('Do you like dogs?\n1. Yes\n2. No\nYour answer:'))
 		## STEP 2&3 HERE
-	
+                if answer_one == 1:
+                    total_points += 5
+                else:
+                    total_points -= 5
 		## STEP 4 HERE
 	
 		
