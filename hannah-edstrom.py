@@ -30,8 +30,12 @@ def play_game():
 		
 		user_entry = input('Select Option!\n1. Play Game\n2. Exit Game\n\nYour Selection: ')
 		user_entry = int(user_entry)
-	
-
+	        
+                ## FINAL RESULTS
+                print(total_points)
+                if total_points >14: print("BFF Material :star-eye-emoji:")
+                    elif total_points > 9: print("we shall be friends")
+                    else: print ("who even are you")
 
 	
 ## Function call to play friendship algorithm game
