@@ -5,7 +5,7 @@ def test(answer):
 	if answer.lower() == 'yes' or answer == 'no':
 		print('')
 	else:
-		raise NameError("You did not answer the question! Type y for yes and n for no.")
+		raise NameError("You did not answer the question! Type either yes or no.")
 
 	return(answer)
 
