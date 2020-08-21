@@ -37,8 +37,6 @@ def play_game():
 		total_points= 0
 		answer_one = test(input("Do you like coding? Just answer with yes or no. \n Your Answer: "))
 
-		print(answer_one)
-		print(type(answer_one))
 		if answer_one == 'yes': total_points +=5
 		elif answer_one == 'no': total_points -=5
 		else: total_points +=0
