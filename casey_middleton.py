@@ -35,7 +35,7 @@ def play_game():
                 elif answer_five == 2: total_points += 7
                 elif answer_five == 3: total_points += 0
                 elif answer_five == 4: total_points -= 5
-                else: total_points: total_points += 2
+                else: total_points += 2
                 ## STEP 4 HERE
                 print('You received % out of 32 points!',total_points)
                 if total_points >= 25: print("Perfect score! Heyyyyy bestie :)")
