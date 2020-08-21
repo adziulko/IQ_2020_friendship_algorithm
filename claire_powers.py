@@ -8,7 +8,7 @@ def play_game():
 	# initialize the user input to 0
 	user_entry = 0
 	# ask the user to make their own input (1 to play or 2 to exit):
-	while user_entry != 1 and user_entry != 2: user_entry = input('Select Option!\n1. Play Game\n2. Exit Game\n\nYour Selection: ')
+	while user_entry != 1 and user_entry != 2: user_entry = int(input('Select Option!\n1. Play Game\n2. Exit Game\n\nYour Selection: '))
 	# if the user selects 1, they want to play! Ask them questions and wait for their answers.
 	while user_entry == 1:
 
