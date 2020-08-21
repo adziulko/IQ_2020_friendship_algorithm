@@ -43,8 +43,8 @@ def play_game():
         elif total_points > 10: print("Sure, we can hang.")
         else: print("Frenemies?")
 
-user_entry = input('Select Option!\n1. Play Game\n2. Exit Game\n\nYour Selection: ')
-user_entry = int(user_entry)
+    user_entry = input('Select Option!\n1. Play Game\n2. Exit Game\n\nYour Selection: ')
+    user_entry = int(user_entry)
 	
 
 
