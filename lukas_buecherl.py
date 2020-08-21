@@ -2,20 +2,20 @@ import sys
 
 ## Handle answer
 def test(answer):
-	try:
-		answer.lower() == 'yes' or answer == 'no'
-	except:
-		print("You did not answer the question! Type y for yes and n for no.")
-	finally:
-		return(answer)
+	if answer.lower() == 'yes' or answer == 'no':
+		print('')
+	else:
+		raise NameError("You did not answer the question! Type y for yes and n for no.")
+
+	return(answer)
 
 def test_beer(answer):
-	try:
-		answer.lower() == 'weissbier' or answer == 'helles'
-	except:
-		print("You did not answer the question! Type either Weissbier or Helles.")
-	finally:
-		return(answer)
+	if answer.lower() == 'weissbier' or answer == 'helles':
+		print('')
+	else:
+		raise NameError("You did not answer the question! Type either Weissbier or Helles.")
+
+	return(answer)
 
 ## Function to play friendship algorithm game
 def play_game():
