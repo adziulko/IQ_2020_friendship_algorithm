@@ -37,33 +37,33 @@ def play_game():
 		total_points= 0
 		answer_one = test(input("Do you like coding? Just answer with yes or no. \n Your Answer: "))
 
-		if answer_one == 'yes': total_points +=5
-		elif answer_one == 'no': total_points -=5
+		if answer_one.lower() == 'yes': total_points +=5
+		elif answer_one.lower() == 'no': total_points -=5
 		else: total_points +=0
 
 		## STEP 2 HERE
 		answer_two = test(input("Do you believe in climate change? Answer with yes or no. \n Your Answer: "))
-		if answer_two == 'yes': total_points +=5
-		elif answer_two == 'no': total_points -=10
+		if answer_two.lower() == 'yes': total_points +=5
+		elif answer_two.lower() == 'no': total_points -=10
 		else: total_points +=0
 
 		## STEP 3 HERE
 		answer_three = test(input("Do you have knowledge of beer? Answer with yes or no. \n Your Answer: "))
-		if answer_three == 'yes': total_points +=10
-		elif answer_three == 'no': total_points -=5
+		if answer_three.lower() == 'yes': total_points +=10
+		elif answer_three.lower() == 'no': total_points -=5
 		else: total_points +=0
 
 		## STEP 4 HERE
 		if answer_three == 'yes':
 			answer_four = test_beer(input("Do you prefer Weissbier or Helles?  \n1. Weissbier\n2. Helles\nYour Selection: "))
-			if answer_four == 'Weissbier': total_points +=8
-			elif answer_four == 'Helles': total_points +=3
+			if answer_four.lower() == 'Weissbier': total_points +=8
+			elif answer_four.lower() == 'Helles': total_points +=3
 			else: total_points +=0
 
 		## STEP 5 HERE
 		answer_five = test(input("Do you like the Beatles? Answer with yes or no. \n Your Answer: "))
-		if answer_five == 'yes': total_points +=10
-		elif answer_five == 'no': total_points -=5
+		if answer_five.lower() == 'yes': total_points +=10
+		elif answer_five.lower() == 'no': total_points -=5
 		else: total_points +=0
 
 		## FINAL STEP
