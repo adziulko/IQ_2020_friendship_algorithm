@@ -3,15 +3,19 @@ import sys
 ## Handle answer
 def test(answer):
 	try:
-		answer == 'yes' or answer == 'no'
+		answer.lower() == 'yes' or answer == 'no'
 	except:
 		print("You did not answer the question! Type y for yes and n for no.")
+	finally:
+		return(answer)
 
 def test_beer(answer):
 	try:
-		answer == 'Weissbier' or answer == 'Helles'
+		answer.lower() == 'weissbier' or answer == 'helles'
 	except:
 		print("You did not answer the question! Type either Weissbier or Helles.")
+	finally:
+		return(answer)
 
 ## Function to play friendship algorithm game
 def play_game():
@@ -33,7 +37,8 @@ def play_game():
 		total_points= 0
 		answer_one = test(input("Do you like coding? Just answer with yes or no. \n Your Answer: "))
 
-
+		print(answer_one)
+		print(type(answer_one))
 		if answer_one == 'yes': total_points +=5
 		elif answer_one == 'no': total_points -=5
 		else: total_points +=0
@@ -65,12 +70,12 @@ def play_game():
 
 		## FINAL STEP
 		print(total_points)
-        if total_points > 37: print ("You are probably me")
-        elif total_points > 32: print ("We can definetly be friends")
-        elif total_points > 15: print ("We can work this out")
-        elif total_points > 10: print ("Gonna be tough not gonna lie")
-        elif total_points > 5: print ("Let's start from the bottom")
-        else: print ("Well no")
+		if total_points > 37: print("You are probably me")
+		elif total_points > 32: print("We can definetly be friends")
+		elif total_points > 15: print("We can work this out")
+		elif total_points > 10: print("Gonna be tough not gonna lie")
+		elif total_points > 5: print("Let's start from the bottom")
+		else: print("Well no")
 
 
 		user_entry = input('Select Option!\n1. Play Game\n2. Exit Game\n\nYour Selection: ')
